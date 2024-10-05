@@ -1,0 +1,16 @@
+import csv
+
+# Data to be stored in CSV
+data = [
+    ['email', 'password', 'security_question', 'security_answer'],
+    ['user1@example.com', 'password_hash', 'What is your pet\'s name?', 'Fluffy'],
+    ['user2@example.com', 'password_hash', 'What is your favorite color?', 'Blue']
+]
+
+# Create and write to CSV file
+with open('regno.csv', mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print("CSV file created successfully!")
+
